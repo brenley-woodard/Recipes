@@ -1,29 +1,13 @@
-const SUPABASE_URL = '';
-const SUPABASE_KEY = '';
+const SUPABASE_URL = 'https://vqqpenhwkjtsmcuxcdwc.supabase.co';
+const SUPABASE_KEY =
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZxcXBlbmh3a2p0c21jdXhjZHdjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Njk4NjM1MTIsImV4cCI6MTk4NTQzOTUxMn0.5yUTowMY1txospa9eXlhIRX_1AT7xYNbmSU2Ia9ZTPc';
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 /* Auth related functions */
 
-export function getUser() {
-    return client.auth.user();
-}
-
-export async function signUpUser(email, password) {
-    return await client.auth.signUp({
-        email,
-        password,
-    });
-}
-
-export async function signInUser(email, password) {
-    return await client.auth.signIn({
-        email,
-        password,
-    });
-}
-
-export async function signOutUser() {
-    return await client.auth.signOut();
+export async function getRecipes() {
+    const response = await client.from('recipes').select();
+    return response.data;
 }
 
 /* Data functions */

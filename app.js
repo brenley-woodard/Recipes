@@ -1,11 +1,19 @@
 /* Imports */
-// this will check if we have a user and set signout link if it exists
-import './auth/user.js';
-
+import { getRecipes } from './fetch-utils.js';
+import { renderRecipe } from './render-utils.js';
 /* Get DOM Elements */
+const recipesContainer = document.getElementById('recipe-list-container');
 
 /* State */
 
 /* Events */
+window.addEventListener('load', async () => {
+    const recipes = await getRecipes();
+
+    for (let recipe of recipes) {
+        const recipeEl = renderRecipe(recipe);
+        recipesContainer.append(recipeEl);
+    }
+});
 
 /* Display Functions */
