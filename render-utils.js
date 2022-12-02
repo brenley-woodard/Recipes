@@ -7,10 +7,10 @@ export function renderRecipe(recipe) {
     const p4 = document.createElement('p');
 
     h4.textContent = recipe.name;
-    p.textContent = recipe.type;
-    p2.textContent = recipe.season;
-    p3.textContent = recipe.have_made;
-    p4.textContent = recipe.excitement_level;
+    p.textContent = `Category: ${recipe.type}`;
+    p2.textContent = `Season: ${recipe.season}`;
+    p3.textContent = `Made before? ${recipe.have_made}`;
+    p4.textContent = `Excitement level? ${recipe.excitement_level}`;
 
     div.append(h4, p, p2, p3, p4);
 
