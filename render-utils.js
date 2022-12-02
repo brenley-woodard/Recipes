@@ -13,6 +13,7 @@ export function renderRecipe(recipe) {
     p4.textContent = `Excitement level? ${recipe.excitement_level}`;
 
     div.append(h4, p, p2, p3, p4);
+    div.classList.add('recipe-box');
 
     return div;
 }
