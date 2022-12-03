@@ -41,35 +41,7 @@ body {
     flex-grow: 2;
 }
 
-.title {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    color: #fffceb;
-}
-
-.page-header nav {
-    display: flex;
-    gap: 10px;
-}
-
-main {
-    padding: 20px;
-}
-
-.avatar {
-    height: 36px;
-    width: 36px;
-    object-fit: cover;
-    border: 1px solid var(--placeholder-color);
-    border-radius: 100%;
-}
-
 .error {
     min-height: 1em;
     color: red;
-}
-
-.hidden {
-    display: none;
 }

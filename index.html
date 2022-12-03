@@ -37,12 +37,23 @@
         </header>
 
         <main>
-            <ul>
-                Expectations Key...
-                <li>1: Not expecting to like it.</li>
-                <li>2: I will like it.</li>
-                <li>3: SO EXCITED.</li>
-            </ul>
+            <section id="info-section">
+                <form id="search-form">
+                    <label for="category">
+                        Select a category:
+                        <select name="category" id="category-select">
+                            <option value="">Categories...</option>
+                        </select>
+                        <button type="submit">search</button>
+                    </label>
+                </form>
+                <ul>
+                    Expectations Key...
+                    <li>1: Not expecting to like it.</li>
+                    <li>2: I will like it.</li>
+                    <li>3: SO EXCITED.</li>
+                </ul>
+            </section>
             <div id="recipe-list-container"></div>
         </main>
     </body>

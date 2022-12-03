@@ -29,3 +29,16 @@ Style Todos...
 
 -   pick fonts
 -   figure out how to change colors upon completing
+
+            <section id="info-section">
+                <h2>Search By: /h2>
+                <form id="search-form">
+                    <label for="category">
+                        Select a category:
+                        <select name="category" id="category-select">
+                            <option value="">Categories...</option>
+                        </select>
+                        <button type="submit">search</button>
+                    </label>
+                </form>
+            </section>

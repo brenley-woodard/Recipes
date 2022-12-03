@@ -1,5 +1,20 @@
+.title {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    color: #216e4e;
+    background-color: rgba(255, 252, 235, 0.7);
+    border-radius: 10px;
+}
+
+#info-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 main {
     background-color: #fffceb;
+    padding: 20px;
 }
 
 #recipe-list-container {
@@ -10,7 +25,6 @@ main {
 }
 
 .recipe-box {
-    background-color: #fff199;
     width: 300px;
     padding: 10px;
     border-radius: 10px;
