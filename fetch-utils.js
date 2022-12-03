@@ -8,4 +8,8 @@ export async function getRecipes() {
     return response.data;
 }
 
-export async function getRecipeById() {}
+export async function getRecipeById(id) {
+    const response = await client.from('recipes').select('*').match({ id: id }).single();
+
+    return response.data;
+}

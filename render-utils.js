@@ -19,7 +19,7 @@ export function renderRecipe(recipe) {
     p3.textContent = `Made before? ${recipe.have_made}`;
 
     const p4 = document.createElement('p');
-    p4.textContent = `Expectations? ${recipe.excitement_level}`;
+    p4.textContent = `Expectations? ${recipe.expectations}`;
 
     recipeEl.append(h4, p, p2, p3, p4);
 
@@ -27,4 +27,28 @@ export function renderRecipe(recipe) {
     return div;
 }
 
-export function renderRecipeDetail() {}
+export function renderDetail(recipe) {
+    const div = document.createElement('div');
+
+    const nameEl = document.createElement('h3');
+    nameEl.textContent = recipe.name;
+
+    const typeEl = document.createElement('p');
+    typeEl.textContent = recipe.type;
+
+    const seasonEl = document.createElement('p');
+    typeEl.textContent = recipe.season;
+
+    const madeEl = document.createElement('p');
+    madeEl.textContent = recipe.have_made;
+
+    const expectEl = document.createElement('p');
+    expectEl.textContent = recipe.expectations;
+
+    const notesEl = document.createElement('p');
+    notesEl.textContent = recipe.notes;
+
+    div.append(nameEl, typeEl, seasonEl, madeEl, expectEl, notesEl);
+
+    return div;
+}

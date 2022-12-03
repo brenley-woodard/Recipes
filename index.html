@@ -39,16 +39,23 @@
         <main>
             <section id="info-section">
                 <form id="search-form">
-                    <label for="category">
-                        Select a category:
-                        <select name="category" id="category-select">
-                            <option value="">Categories...</option>
-                        </select>
-                        <button type="submit">search</button>
-                    </label>
+                    <h3>Filter By:</h3>
+                    <select name="type" id="type-select">
+                        <option value="">Categories...</option>
+                    </select>
+                    <select name="season" id="season-select">
+                        <option value="">Season...</option>
+                    </select>
+                    <select name="have-made" id="have-made-select">
+                        <option value="">Have made yet...</option>
+                    </select>
+                    <select name="expectations" id="expectations-select">
+                        <option value="">Expectations...</option>
+                    </select>
+                    <button type="submit">search</button>
                 </form>
-                <ul>
-                    Expectations Key...
+                <ul id="expect-key">
+                    <h3 id="expect-title">Expectations Key...</h3>
                     <li>1: Not expecting to like it.</li>
                     <li>2: I will like it.</li>
                     <li>3: SO EXCITED.</li>
