@@ -1,26 +1,44 @@
-## The Golden Rule:
+Excitement Level Key
+3 - Sooo excited.
+2 - I will like it.
+1 - Not expecting to like it.
 
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
+On page load...
+(one day: add filter functionality that filters out by all categories)
 
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
+-   list of all recipe cards
+-   filter thru recipes by
+    -   season
+    -   type
+    -   have_made (change background color depending on if made or not)
+    -   excitement level
+    -   (one day: by ingredients & complexity(will have to determine my own formula for complexity taking time/difficulty/# of sub-recipes involved))
 
-## Making a plan
+When on card...
 
-1. **Make a drawing of your app. Simple "wireframes"**
-1. **Once you have a drawing, name the HTML elements you'll need to realize your vision**
-1. **For each HTML element ask: Why do I need this?**
-1. **Once we know _why_ we need each element, think about how to implement the "Why" as a "How"**
-1. **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change?**
-1. **Think about how to validate each of your features according to a Definition of Done**
-1. **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
+-   get taken to detail page
+    -   name
+    -   season
+    -   type
+    -   have_made (with option to edit)
+    -   div comment section
 
-Additional considerations:
+Use Bulletin Board and Favorite Foods(supabase-list-detail) for functionality
 
--   Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
--   Consider your data model.
-    -   What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need?
-    -   What are the key/value pairs?
-    -   What arrays might you need?
-    -   What needs to live in a persistence layer?
--   Is there some state we need to initialize?
--   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+Style Todos...
+
+-   pick fonts
+-   figure out how to change colors upon completing
+
+            <section id="info-section">
+                <h2>Search By: /h2>
+                <form id="search-form">
+                    <label for="category">
+                        Select a category:
+                        <select name="category" id="category-select">
+                            <option value="">Categories...</option>
+                        </select>
+                        <button type="submit">search</button>
+                    </label>
+                </form>
+            </section>
