@@ -14,7 +14,7 @@
             defer
             src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.7/dist/umd/supabase.min.js"
         ></script>
-        <script type="module" src="app.js"></script>
+        <script type="module" src="details.js"></script>
 
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,25 +25,19 @@
         />
 
         <!-- css -->
-        <link rel="stylesheet" href="/styles/reset.css" />
-        <link rel="stylesheet" href="/styles/global.css" />
-        <link rel="stylesheet" href="/styles/style.css" />
+        <link rel="stylesheet" href="../styles/reset.css" />
+        <link rel="stylesheet" href="../styles/global.css" />
+        <link rel="stylesheet" href="../styles/style.css" />
         <!-- add link for page specific css -->
     </head>
 
     <body>
         <header class="page-header">
-            <p class="title">Operation Bake Clair's Book!</p>
+            <p class="title">Recipe Details</p>
         </header>
 
         <main>
-            <ul>
-                Expectations Key...
-                <li>1: Not expecting to like it.</li>
-                <li>2: I will like it.</li>
-                <li>3: SO EXCITED.</li>
-            </ul>
-            <div id="recipe-list-container"></div>
+            <div id="detail-card"></div>
         </main>
     </body>
 </html>
